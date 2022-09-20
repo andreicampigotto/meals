@@ -1,4 +1,5 @@
 import 'dart:ffi';
+import 'dart:math';
 
 enum Complexity {
   simple,
@@ -42,4 +43,30 @@ class Meal {
     required this.complexity,
     required this.cost,
   });
+
+  String get complexityText {
+    switch (complexity) {
+      case Complexity.simple:
+        return 'Simples';
+      case Complexity.medium:
+        return 'Normal';
+      case Complexity.hard:
+        return 'Dificil';
+      default:
+        return 'Complexidade desconhecida';
+    }
+  }
+
+  String get costText {
+    switch (cost) {
+      case Cost.cheap:
+        return '\$';
+      case Cost.fair:
+        return '\$\$';
+      case Cost.expensive:
+        return '\$\$\$';
+      default:
+        return 'Valor desconhecido';
+    }
+  }
 }
