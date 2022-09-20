@@ -76,9 +76,7 @@ class MealDetailScreen extends StatelessWidget {
                       ),
                       title: Text(meal.steps[index]),
                     ),
-                    Divider(
-                      color: Colors.black,
-                    ),
+                    Divider(),
                   ],
                 );
               },
