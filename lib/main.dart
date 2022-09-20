@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           1,
         ),
         textTheme: ThemeData.light().textTheme.copyWith(
-                titleMedium: TextStyle(
+                titleMedium: const TextStyle(
               fontSize: 20,
               fontFamily: 'RobotoCondensed',
             )),
