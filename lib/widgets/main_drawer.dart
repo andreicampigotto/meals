@@ -4,7 +4,7 @@ import '../utils/app_routes.dart';
 class MainDrawer extends StatelessWidget {
   const MainDrawer({super.key});
 
-  Widget _createItem(IconData icon, String label, Function onTap) {
+  Widget _createItem(IconData icon, String label, Function() onTap) {
     return ListTile(
       leading: Icon(
         icon,
@@ -12,13 +12,13 @@ class MainDrawer extends StatelessWidget {
       ),
       title: Text(
         label,
-        style: TextStyle(
+        style: const TextStyle(
           fontFamily: 'RobotoCondensed',
           fontSize: 24,
           fontWeight: FontWeight.bold,
         ),
       ),
-      onTap: () {},
+      onTap: onTap,
     );
   }
 
@@ -30,8 +30,8 @@ class MainDrawer extends StatelessWidget {
           Container(
             height: 120,
             width: double.infinity,
-            padding: EdgeInsets.all(16),
-            color: Theme.of(context).accentColor,
+            padding: const EdgeInsets.all(16),
+            color: Theme.of(context).colorScheme.secondary,
             alignment: Alignment.bottomCenter,
             child: Text(
               'Vamos cozinhar?',
@@ -42,17 +42,18 @@ class MainDrawer extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           _createItem(
             Icons.restaurant_outlined,
             'Refeiçōes',
-            () => Navigator.of(context).pushNamed(AppRoutes.HOME),
+            () => Navigator.of(context).pushReplacementNamed(AppRoutes.HOME),
           ),
-          SizedBox(height: 16),
+          const SizedBox(height: 16),
           _createItem(
             Icons.settings_outlined,
             'Configuraçōes',
-            () => Navigator.of(context).pushNamed(AppRoutes.SETTINGS),
+            () =>
+                Navigator.of(context).pushReplacementNamed(AppRoutes.SETTINGS),
           ),
         ],
       ),
