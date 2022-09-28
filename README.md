@@ -1,16 +1,23 @@
 # meals
 
-A new Flutter project.
+<h4 align="center"> 
+	🚧   Work in progress   🚧
+</h4>
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+<p>
+<img width="353" alt="Screen Shot 2022-09-27 at 9 11 46 PM" src="https://user-images.githubusercontent.com/38699529/192659230-e6988043-66ea-46c2-be60-f0b17f15ef5a.png">
+<img width="353" alt="Screen Shot 2022-09-27 at 9 11 27 PM" src="https://user-images.githubusercontent.com/38699529/192659235-2c4e8050-ec6c-46bd-87fd-d02d02a47755.png">
+<img width="352" alt="Screen Shot 2022-09-27 at 9 10 46 PM" src="https://user-images.githubusercontent.com/38699529/192659240-86771350-8c50-40f5-a3ac-76fa629d6749.png">
+<\p>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Built With
+- [Flutter](https://flutter.dev) - Create an App
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##
+
+### Authors
+- Name: Andrei Campigotto
+- E-mail: andreicampigotto@icloud.com
+- [Linkedin](https://www.linkedin.com/in/andrei-campigotto/)
