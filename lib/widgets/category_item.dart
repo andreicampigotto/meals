@@ -41,6 +41,7 @@ class CategoryItem extends StatelessWidget {
         child: Text(
           category.title,
           style: Theme.of(context).textTheme.titleMedium,
+          textAlign: TextAlign.center,
         ),
       ),
     );
